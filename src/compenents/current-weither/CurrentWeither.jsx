@@ -21,22 +21,22 @@ const CurrentWeither = ({ data }) => {
 
   const weatherDetails = [
     {
-      img: "/public/icons/case1.png",
+      img: "/icons/case1.png",
       title: "Feels Like",
       value: Math.round(data.main.feels_like) + "°C",
     },
     {
-      img: "/public/icons/case2.png",
+      img: "/icons/case2.png",
       title: "Humidity",
       value: data.main.humidity + "%",
     },
     {
-      img: "/public/icons/case3.png",
+      img: "/icons/case3.png",
       title: "Pressure",
       value: data.main.pressure + " hPa",
     },
     {
-      img: "/public/icons/case4.png",
+      img: "/icons/case4.png",
       title: "Wind Speed",
       value: Math.round(data.wind.speed) + " m/s",
     },
@@ -85,7 +85,7 @@ const CurrentWeither = ({ data }) => {
 
         <div className="flex flex-col items-center justify-center gap-3   p-4 rounded-xl">
           <img
-            src={`/public/icons/${data.weather[0].icon}.png`}
+            src={`/icons/${data.weather[0].icon}.png`}
             alt=""
             className="w-32 h-32"
           />
